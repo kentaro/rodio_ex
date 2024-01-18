@@ -24,3 +24,6 @@ rodio-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+# Ignore priv files
+/priv/

@@ -3,16 +3,19 @@ defmodule Rodio do
   Documentation for `Rodio`.
   """
 
+  alias Rodio.Native
+
   @doc """
-  Hello world.
+  Plays an audio file.
 
   ## Examples
 
-      iex> Rodio.hello()
-      :world
+      iex> Rodio.play("/path/to/file")
+      :ok
 
   """
-  def hello do
-    :world
+  @spec play(file_path :: String.t()) :: :ok | {:error, String.t()}
+  def play(file_path) do
+    Native.play(file_path)
   end
 end

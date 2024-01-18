@@ -1,0 +1,14 @@
+[package]
+name = "rodio_ex"
+version = "0.1.0"
+authors = []
+edition = "2021"
+
+[lib]
+name = "rodio_ex"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+rustler = "0.30.0"
+rodio = "0.17.3"

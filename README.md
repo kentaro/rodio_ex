@@ -1,21 +1,24 @@
-# Rodio
+# rodio_ex
 
-**TODO: Add description**
+An Elixir binding for [Rodio](https://github.com/RustAudio/rodio).
+This library currently supports only just playing a sound file.
 
 ## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `rodio` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:rodio, "~> 0.1.0"}
+    {:rodio_ex, github: "kentaro/rodio_ex", branch: "main"}
   ]
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/rodio>.
+## Usage
 
+```elixir
+Rodio.play("/Users/kenta/Downloads/sound.wav")
+```
+
+## Author
+
+Kentaro Kuribayashi <kentarok@gmail.com>
