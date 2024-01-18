@@ -16,7 +16,7 @@ end
 ## Usage
 
 ```elixir
-Rodio.play("/Users/kenta/Downloads/sound.wav")
+Rodio.play("/path/to/audio")
 ```
 
 ## Author
